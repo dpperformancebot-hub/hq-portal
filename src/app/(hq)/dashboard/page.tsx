@@ -16,6 +16,8 @@ import {
 import { persistenceEnabled } from "@/lib/db/client";
 import { listOnboarding } from "@/lib/onboarding-actions";
 import { getServerIdentity } from "@/lib/role-server";
+import { IS_DP } from "@/lib/brand";
+import { redirect } from "next/navigation";
 import { payVisibleToViewer } from "@/lib/access-policy";
 import { stripCoachDashboardPay } from "@/lib/pay-visibility";
 import { getTasks as getSeedTasks } from "@/lib/seed";
@@ -33,6 +35,10 @@ export default async function DashboardPage({
 }) {
   const identity = await getServerIdentity();
   const { role, linkedCoachId, isHeadCoach, impersonating, realIsHeadCoach, realRole } = identity;
+
+  // DP coach hub (2026-10): a plain coach's landing screen is /home; the
+  // client dashboard stays for the head coach.
+  if (IS_DP && role === "coach" && !isHeadCoach) redirect("/home");
 
   // C4: every role's dashboard carries a "Today I will" card, so the task
   // list loads once up front (items are ordinary tasks rows, type "Today").

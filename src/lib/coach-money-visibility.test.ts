@@ -100,8 +100,12 @@ describe("DP: nothing is hidden from coaches", () => {
 });
 
 describe("DP coach still sees their own pay, as before", () => {
-  it("/dashboard: pay card and rates are in the payload (hidePay false)", async () => {
-    const tree = await page("dashboard", COACH);
+  it("/dashboard sends a plain coach to the coach hub home (2026-10)", async () => {
+    await expect(page("dashboard", COACH)).rejects.toThrow("NEXT_REDIRECT:/home");
+  });
+
+  it("/dashboard: pay card and rates are in the head coach's payload (hidePay false)", async () => {
+    const tree = await page("dashboard", HEAD_COACH);
     expect(propOf(tree, "hidePay")).toBe(false);
     const data = propOf(tree, "data") as { coach: { weeklyRate: number }; pay: { nextPayDate: string } };
     expect(data.coach.weeklyRate).toBe(SENTINEL_RATE);
@@ -146,8 +150,9 @@ describe("DP owner viewing as a coach is unchanged (the TJD view-as-coach rule i
     expect(moneyHiddenFromViewer(OWNER_AS_HEAD_COACH)).toBe(false);
   });
 
-  it("/dashboard keeps the pay card and rates", async () => {
-    const tree = await page("dashboard", OWNER_AS_COACH);
+  it("/dashboard keeps the pay card and rates (viewing as the head coach; a plain coach lands on /home)", async () => {
+    await expect(page("dashboard", OWNER_AS_COACH)).rejects.toThrow("NEXT_REDIRECT:/home");
+    const tree = await page("dashboard", OWNER_AS_HEAD_COACH);
     expect(propOf(tree, "hidePay")).toBe(false);
     expect((propOf(tree, "data") as { coach: { weeklyRate: number } }).coach.weeklyRate).toBe(SENTINEL_RATE);
   });

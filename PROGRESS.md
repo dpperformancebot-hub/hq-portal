@@ -36,6 +36,15 @@ open TJD items) live in `private/TJD-BUSINESS-NOTES.md` on the owner's
 machine. That folder is gitignored; never commit it or copy its contents
 into tracked files.
 
+### Coach hub (2026-10-11, cloud session, branch feat/coach-hub)
+
+DP plain coaches now get a slim hub (Home, Start here, SOPs, Academy,
+Resources) instead of the client toolset; client work moved to 1fit. Head
+coach and TJD unchanged. Coaches sign in with Google on their work email
+(Clerk setup is a dashboard job, see docs/coach-hub.md). This repo
+(dpperformancebot-hub/hq-portal) is now git-connected to the DP Vercel project:
+pushing a branch makes a preview, merging to main deploys DP.
+
 ### Pending owner decisions
 
 - DP: deploy the 7 commits above, or hold.

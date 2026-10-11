@@ -1,4 +1,4 @@
-import { BRAND } from "@/lib/brand";
+import { BRAND, IS_DP } from "@/lib/brand";
 import { payVisibleToViewer } from "@/lib/access-policy";
 // Role-based navigation + route architecture.
 // Role is a property on the user. This config maps role -> { navGroups,
@@ -107,7 +107,11 @@ const OWNER_NAV: NavGroup[] = [
   },
 ];
 
-const COACH_NAV: NavGroup[] = [
+// The full coach toolset (client grid, check-ins, pay...). Since 2026-10 DP's
+// plain coaches use the slim hub below instead (client work moved to 1fit);
+// this stays as TJD's coach nav and inside DP's head-coach nav. Nothing here
+// is deleted, so it can be switched back on per brand.
+const LEGACY_COACH_NAV: NavGroup[] = [
   {
     label: "Coach",
     items: [
@@ -143,6 +147,42 @@ const COACH_NAV: NavGroup[] = [
     ],
   },
 ];
+
+// DP coach hub (owner decision 2026-10-11): a plain coach login sees only the
+// Academy, the handbook (the Coach Welcome Pack split into Start here + SOPs)
+// and resources. Day-to-day client work happens in 1fit.
+const DP_COACH_HUB: NavGroup[] = [
+  {
+    label: "Coach",
+    items: [
+      { label: "Home", slug: "home", icon: "dashboard" },
+      { label: "Start here", slug: "start-here", icon: "star" },
+      { label: "SOPs", slug: "sops", icon: "file" },
+      { label: "Academy", slug: "academy", icon: "book" },
+    ],
+  },
+  {
+    label: "Resources",
+    items: [
+      { label: "Resources", slug: "resources", icon: "folder" },
+      { label: "Calculators", slug: "calculators", icon: "scale" },
+      { label: "Recipe Index", slug: "recipes", icon: "chef" },
+      { label: "Quizzes", slug: "quizzes", icon: "clipboard" },
+    ],
+  },
+];
+
+const COACH_NAV: NavGroup[] = IS_DP ? DP_COACH_HUB : LEGACY_COACH_NAV;
+
+/** Legacy coach groups minus anything the hub already lists, so a DP head
+ *  coach gets the hub plus his full toolset without duplicate items. */
+function withoutHubSlugs(groups: NavGroup[]): NavGroup[] {
+  const hub = new Set(DP_COACH_HUB.flatMap((g) => g.items.map((i) => i.slug)));
+  return groups
+    // Relabelled so the sidebar never shows two "Coach" groups (also its key).
+    .map((g) => ({ ...g, label: g.label === "Coach" ? "Clients" : g.label, items: g.items.filter((i) => !hub.has(i.slug)) }))
+    .filter((g) => g.items.length > 0);
+}
 
 const VA_NAV: NavGroup[] = [
   {
@@ -193,7 +233,9 @@ const HEAD_COACH_OVERSIGHT: NavGroup = {
   ],
 };
 
-const HEAD_COACH_NAV: NavGroup[] = [...COACH_NAV, HEAD_COACH_OVERSIGHT];
+const HEAD_COACH_NAV: NavGroup[] = IS_DP
+  ? [...DP_COACH_HUB, ...withoutHubSlugs(LEGACY_COACH_NAV), HEAD_COACH_OVERSIGHT]
+  : [...LEGACY_COACH_NAV, HEAD_COACH_OVERSIGHT];
 
 // R6-4: Mykael (ops_manager) sees everything EXCEPT financials/MRR/sales.
 // Money values elsewhere render digit-masked (forced Sensitive). Taskboard is
@@ -217,7 +259,7 @@ export const ROLE_CONFIG: Record<Role, { navGroups: NavGroup[]; defaultRoute: st
   admin: { navGroups: OWNER_NAV, defaultRoute: "/dashboard" },
   ops_manager: { navGroups: OPS_MANAGER_NAV, defaultRoute: "/tasks" },
   ambassador_mgr: { navGroups: AMBASSADOR_MGR_NAV, defaultRoute: "/ambassadors" },
-  coach: { navGroups: COACH_NAV, defaultRoute: "/dashboard" },
+  coach: { navGroups: COACH_NAV, defaultRoute: IS_DP ? "/home" : "/dashboard" },
   va: { navGroups: VA_NAV, defaultRoute: "/dashboard" },
   sales: { navGroups: SALES_NAV, defaultRoute: "/dashboard" },
 };

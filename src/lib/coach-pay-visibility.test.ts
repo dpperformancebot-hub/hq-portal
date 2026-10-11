@@ -75,8 +75,8 @@ describe("coachCanSeePay per brand", () => {
 });
 
 describe("DP (unchanged): My Pay", () => {
-  it("a plain coach and a head coach still see My Pay in the nav", () => {
-    expect(visibleSlugsFor({ role: "coach" }).has("my-pay")).toBe(true);
+  it("a head coach still sees My Pay in the nav; a plain coach's slim hub nav (2026-10) does not list it", () => {
+    expect(visibleSlugsFor({ role: "coach" }).has("my-pay")).toBe(false);
     const head = getNavGroupsFor({ role: "coach", isHeadCoach: true }).flatMap((g) => g.items.map((i) => i.slug));
     expect(head).toContain("my-pay");
   });
@@ -94,7 +94,7 @@ describe("DP (unchanged): My Pay", () => {
   });
 
   it("the owner viewing as a coach or head coach still has My Pay in the nav, and no money is hidden", () => {
-    expect(visibleSlugsFor({ role: "coach", realRole: "owner" }).has("my-pay")).toBe(true);
+    expect(visibleSlugsFor({ role: "coach", realRole: "owner" }).has("my-pay")).toBe(false); // slim hub nav
     expect(visibleSlugsFor({ role: "coach", realRole: "owner", isHeadCoach: true }).has("my-pay")).toBe(true);
     const ownerAsCoach = ident("coach", { realRole: "owner", impersonating: true });
     expect(payVisibleToViewer(ownerAsCoach)).toBe(true);
