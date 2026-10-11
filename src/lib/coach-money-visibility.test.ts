@@ -132,8 +132,14 @@ describe("DP head coach surfaces are unchanged", () => {
     });
   }
 
-  it("/reports/[id] is not newly blocked on DP (the TJD guard is brand-gated)", async () => {
-    await expect(page("reports/[id]", COACH, { id: "r1" })).resolves.toBeTruthy();
+  it("/reports/[id] uses the same allowlist as /reports on DP: a coach is sent home, the owner gets in", async () => {
+    await expect(page("reports/[id]", COACH, { id: "r1" })).rejects.toThrow("NEXT_REDIRECT");
+    const OWNER: ServerIdentity = { ...COACH, role: "owner", realRole: "owner", linkedCoachId: null };
+    const owner = await page("reports/[id]", OWNER, { id: "r1" }).then(
+      () => "rendered",
+      (e: Error) => e.message,
+    );
+    expect(owner).not.toMatch(/NEXT_REDIRECT/);
   });
 });
 
