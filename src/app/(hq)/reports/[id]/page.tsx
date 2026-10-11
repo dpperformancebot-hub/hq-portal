@@ -2,7 +2,7 @@ import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Card, EmptyState, PageHeader } from "@/components/ui";
 import { getReportsData } from "@/lib/data";
-import { moneyHiddenFromViewer } from "@/lib/access-policy";
+import { canManageBrandContent, moneyHiddenFromViewer } from "@/lib/access-policy";
 import { getDefaultRoute } from "@/lib/navigation";
 import { getServerIdentity } from "@/lib/role-server";
 
@@ -12,10 +12,13 @@ export default async function ReportDetailPage({ params }: { params: Promise<{ i
   // weekly cron report prints MRR), and this detail route had no server
   // guard, so a coach could open /reports/<id> by URL. A TJD coach or head
   // coach lands on their dashboard instead. Gated on the brand flag so DP is
-  // unchanged (DP's /reports list is brand-manager only; the detail page is
-  // still unguarded there, flagged for the owner).
+  // unchanged. The detail page also carries the same allowlist as the /reports
+  // list, so nobody can open a report by URL they could not reach from the list.
   const viewer = await getServerIdentity();
   if (moneyHiddenFromViewer(viewer)) redirect(getDefaultRoute(viewer.role));
+  if (!canManageBrandContent({ role: viewer.role, realRole: viewer.realRole, isHeadCoach: viewer.isHeadCoach, linkedCoachId: viewer.linkedCoachId })) {
+    redirect(getDefaultRoute(viewer.role));
+  }
   const report = (await getReportsData()).find((r) => r.id === id);
   if (!report) notFound();
   return (
