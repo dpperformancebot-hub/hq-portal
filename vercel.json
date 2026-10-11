@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/sync/ghl",
+      "schedule": "55 19 * * *"
+    },
+    {
+      "path": "/api/reports/weekly",
+      "schedule": "0 20 * * 0"
+    },
+    {
+      "path": "/api/notifications/deliver",
+      "schedule": "15 19 * * *"
+    }
+  ]
+}

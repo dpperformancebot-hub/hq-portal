@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DP Performance — Weekly Capacity Check</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;height:100%;background:#faf9f5;font-family:'Inter',system-ui,sans-serif;color:#1a1a17;-webkit-font-smoothing:antialiased}
+  button,input,select,textarea{font-family:inherit}
+  select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6659' stroke-width='2.5' stroke-linecap='round'><path d='m6 9 6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 10px center;padding-right:30px!important}
+  a{color:#16a34a}a:hover{color:#0f6b31}
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-thumb{background:#ddd8cc;border-radius:5px;border:2px solid transparent;background-clip:padding-box}
+  ::-webkit-scrollbar-track{background:transparent}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <rect width="200" height="200" fill="#faf9f5"/>
+    <rect x="26" y="88" width="26" height="52" rx="6" fill="#fdeaea" stroke="#dc2626" stroke-width="2"/>
+    <rect x="60" y="76" width="26" height="64" rx="6" fill="#fdf3dd" stroke="#d97706" stroke-width="2"/>
+    <rect x="94" y="60" width="26" height="80" rx="6" fill="#eaf6ee" stroke="#16a34a" stroke-width="2"/>
+    <rect x="128" y="70" width="26" height="70" rx="6" fill="#e4f4f9" stroke="#0891b2" stroke-width="2"/>
+    <text x="100" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#1a1a17">Capacity</text>
+  </svg>
+</template>
+<div id="root"></div>
+<script type="text/babel" src="capacity-data.jsx"></script>
+<script type="text/babel" src="capacity-app.jsx"></script>
+</body>
+</html>

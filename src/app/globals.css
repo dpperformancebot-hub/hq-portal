@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Theme tokens. Extracted from reference/prototype.html shared-data block.
+ * Light values under :root and .light, dark values under .dark.
+ * .light and .dark are also valid as scoped wrappers (used by /style-guide
+ * to render both themes at once).
+ */
+
+:root,
+.light {
+  /* Base */
+  --bg: #fbfaf7;
+  --panel: #ffffff;
+  --panel-2: #f5f3ee;
+  --panel-3: #faf8f3;
+  --border: #e5e2da;
+  --border-soft: #ecebe5;
+
+  /* Text ladder */
+  --text: #1a1a1f;
+  --text-dim: #6b6b75;
+  --text-muted: #a5a5ad;
+
+  /* Accent + semantic */
+  --accent: #16a34a;
+  --accent-soft: #e8f5ea;
+  --accent-deep: #14532d;
+  --accent-solid: #16a34a;
+  --positive: #16a34a;
+  --positive-soft: #e8f5ea;
+  --warn: #d97706;
+  --warn-soft: #fef3c7;
+  --danger: #dc2626;
+  --danger-soft: #fde2dd;
+
+  /* Status pills */
+  --status-sent-bg: #e6f2df;
+  --status-sent-fg: #2d6a2d;
+  --status-sent-dot: #4a9e4a;
+  --status-submitted-bg: #b9efad;
+  --status-submitted-fg: #166534;
+  --status-submitted-dot: #4a9e4a;
+  --status-due-bg: #fef3c7;
+  --status-due-fg: #7a5b00;
+  --status-due-dot: #d4a017;
+  --status-missed-bg: #fecaca;
+  --status-missed-fg: #991b1b;
+  --status-missed-dot: #ef4444;
+  --status-messaged-bg: #d9ebe1;
+  --status-messaged-fg: #2d5a42;
+  --status-messaged-dot: #5a9e7a;
+  --status-send-message-bg: #fde8d0;
+  --status-send-message-fg: #8a4a12;
+  --status-send-message-dot: #e67e22;
+  /* R16-2d (Dan): MS teal, M dark purple, F blue. Grid cells fill with these. */
+  --status-message-sent-bg: #c6f1ec;
+  --status-message-sent-fg: #0f5f5a;
+  --status-message-sent-dot: #14b8a6;
+  --status-missed-check-in-bg: #e6dafb;
+  --status-missed-check-in-fg: #5b21b6;
+  --status-missed-check-in-dot: #7c3aed;
+  --status-follow-up-bg: #d6e6fd;
+  --status-follow-up-fg: #1d4ed8;
+  --status-follow-up-dot: #3b82f6;
+  /* R13-5 (Dan, 2026-09-05): paused = yellow, ghosted = grey (reads like
+     cancelled), no check-in = red (uses the missed tokens). */
+  --status-paused-bg: #fde68a;
+  --status-paused-fg: #92400e;
+  --status-paused-dot: #f59e0b;
+  --status-ghosted-bg: #d4d4d8;
+  --status-ghosted-fg: #3f3f46;
+  --status-ghosted-dot: #71717a;
+  --status-cancelled-bg: #ececec;
+  --status-cancelled-fg: #666666;
+  --status-cancelled-dot: #888888;
+
+  /* Plan pills */
+  --plan-weekly-bg: #e0e7ff;
+  --plan-weekly-fg: #4338ca;
+  --plan-fortnightly-bg: #fef3c7;
+  --plan-fortnightly-fg: #92400e;
+
+  /* Resource-type pills */
+  --type-sop-bg: #e0e7ff;
+  --type-sop-fg: #4338ca;
+  --type-video-bg: #fde2dd;
+  --type-video-fg: #8b2a1c;
+  --type-article-bg: #fef3c7;
+  --type-article-fg: #7a5b00;
+  --type-template-bg: #d9ebe1;
+  --type-template-fg: #2d5a42;
+  --type-cpd-bg: #e4e0fa;
+  --type-cpd-fg: #4c3a94;
+  --type-policy-bg: #ececec;
+  --type-policy-fg: #555555;
+}
+
+.dark {
+  /* Base */
+  --bg: #0f0f12;
+  --panel: #17171b;
+  --panel-2: #1e1e24;
+  --panel-3: #1a1a1f;
+  --border: #2a2a32;
+  --border-soft: #24242a;
+
+  /* Text ladder */
+  --text: #e8eaed;
+  --text-dim: #9a9aa5;
+  --text-muted: #6a6a75;
+
+  /* Accent + semantic */
+  --accent: #4ade80;
+  --accent-soft: rgba(74, 222, 128, 0.12);
+  --accent-deep: #16a34a;
+  --accent-solid: #22c55e;
+  --positive: #4ade80;
+  --positive-soft: rgba(74, 222, 128, 0.12);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.14);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.14);
+
+  /* Status pills */
+  --status-sent-bg: rgba(74, 222, 128, 0.14);
+  --status-sent-fg: #86efac;
+  --status-sent-dot: #4ade80;
+  --status-submitted-bg: rgba(34, 197, 94, 0.32);
+  --status-submitted-fg: #bbf7d0;
+  --status-submitted-dot: #4ade80;
+  --status-due-bg: rgba(251, 191, 36, 0.16);
+  --status-due-fg: #fcd34d;
+  --status-due-dot: #fbbf24;
+  --status-missed-bg: rgba(239, 68, 68, 0.32);
+  --status-missed-fg: #fca5a5;
+  --status-missed-dot: #f87171;
+  --status-messaged-bg: rgba(74, 222, 128, 0.12);
+  --status-messaged-fg: #86efac;
+  --status-messaged-dot: #5a9e7a;
+  --status-send-message-bg: rgba(251, 146, 60, 0.18);
+  --status-send-message-fg: #fdba74;
+  --status-send-message-dot: #fb923c;
+  /* R16-2d (Dan): MS teal, M dark purple, F blue. Grid cells fill with these. */
+  --status-message-sent-bg: #c6f1ec;
+  --status-message-sent-fg: #0f5f5a;
+  --status-message-sent-dot: #14b8a6;
+  --status-missed-check-in-bg: #e6dafb;
+  --status-missed-check-in-fg: #5b21b6;
+  --status-missed-check-in-dot: #7c3aed;
+  --status-follow-up-bg: #d6e6fd;
+  --status-follow-up-fg: #1d4ed8;
+  --status-follow-up-dot: #3b82f6;
+  --status-paused-bg: rgba(245, 158, 11, 0.32);
+  --status-paused-fg: #fde047;
+  --status-paused-dot: #facc15;
+  --status-ghosted-bg: rgba(161, 161, 170, 0.28);
+  --status-ghosted-fg: #a1a1aa;
+  --status-ghosted-dot: #71717a;
+  --status-cancelled-bg: rgba(161, 161, 170, 0.12);
+  --status-cancelled-fg: #71717a;
+  --status-cancelled-dot: #52525b;
+
+  /* Plan pills */
+  --plan-weekly-bg: rgba(129, 140, 248, 0.32);
+  --plan-weekly-fg: #c7d2fe;
+  --plan-fortnightly-bg: rgba(251, 191, 36, 0.28);
+  --plan-fortnightly-fg: #fde68a;
+
+  /* Resource-type pills */
+  --type-sop-bg: rgba(129, 140, 248, 0.32);
+  --type-sop-fg: #c7d2fe;
+  --type-video-bg: rgba(248, 113, 113, 0.28);
+  --type-video-fg: #fecaca;
+  --type-article-bg: rgba(251, 191, 36, 0.28);
+  --type-article-fg: #fde68a;
+  --type-template-bg: rgba(74, 222, 128, 0.28);
+  --type-template-fg: #bbf7d0;
+  --type-cpd-bg: rgba(168, 139, 250, 0.32);
+  --type-cpd-fg: #ddd6fe;
+  --type-policy-bg: rgba(161, 161, 170, 0.28);
+  --type-policy-fg: #d4d4d8;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* KPI display number: large, 600 weight, tight tracking, tabular numerals.
+   * Font scales to the CONTAINER width (cqi) so values never overflow their
+   * card. Requires an ancestor with container-type: inline-size (the Kpi
+   * primitive wraps the value in one). nowrap + hidden is the hard guarantee. */
+  .kpi {
+    @apply font-display font-semibold tracking-display tabular-nums;
+    font-size: clamp(1.25rem, 13cqi, 2.5rem);
+    line-height: 1.05;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  /* Long text values (dates, phrases): smaller floor + tighter scale so the
+     whole value fits the card instead of clipping (R10 KPI overflow pass). */
+  .kpi-long {
+    font-size: clamp(0.95rem, 7.5cqi, 1.6rem);
+  }
+}

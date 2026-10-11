@@ -1,0 +1,288 @@
+[
+  {
+    "title": "High-protein overnight oats",
+    "tags": ["Breakfast", "High-protein"],
+    "kcal": 420,
+    "protein": 38,
+    "carbs": 45,
+    "fats": 12,
+    "rating": 4.8,
+    "serves": 1,
+    "ingredients": [
+      "60g rolled oats",
+      "1 scoop (30g) whey protein, vanilla",
+      "150g low-fat Greek yoghurt",
+      "150ml milk of choice",
+      "1 tsp chia seeds",
+      "80g mixed berries",
+      "Cinnamon to taste"
+    ],
+    "method": [
+      "Stir the oats, chia and cinnamon together in a jar.",
+      "Whisk the whey into the milk until smooth, then stir through the oats with the yoghurt.",
+      "Top with berries, lid on, fridge overnight (minimum 4 hours).",
+      "Loosen with a splash of milk in the morning if it sets too thick."
+    ]
+  },
+  {
+    "title": "Chicken teriyaki meal-prep bowl",
+    "tags": ["Lunch", "Meal prep"],
+    "kcal": 540,
+    "protein": 45,
+    "carbs": 55,
+    "fats": 14,
+    "rating": 4.9,
+    "serves": 4,
+    "ingredients": [
+      "600g chicken thigh fillet, trimmed and diced",
+      "300g jasmine rice (dry)",
+      "2 heads broccoli, cut into florets",
+      "2 carrots, ribboned",
+      "80ml teriyaki sauce",
+      "1 tbsp sesame oil",
+      "1 tbsp sesame seeds, spring onion to finish"
+    ],
+    "method": [
+      "Cook the rice; steam the broccoli and carrot until just tender.",
+      "Brown the chicken in sesame oil over high heat, 6 to 8 minutes.",
+      "Add teriyaki sauce and reduce until it coats the chicken.",
+      "Portion rice, veg and chicken into 4 containers; finish with sesame and spring onion.",
+      "Keeps 4 days refrigerated."
+    ]
+  },
+  {
+    "title": "One-pan salmon & greens",
+    "tags": ["Dinner", "Low-carb"],
+    "kcal": 510,
+    "protein": 40,
+    "carbs": 12,
+    "fats": 30,
+    "rating": 4.6,
+    "serves": 1,
+    "ingredients": [
+      "180g salmon fillet, skin on",
+      "150g asparagus",
+      "100g green beans",
+      "1 cup baby spinach",
+      "1 tbsp olive oil",
+      "1/2 lemon, garlic, salt and pepper"
+    ],
+    "method": [
+      "Oven to 200C. Toss asparagus and beans in half the oil on a tray.",
+      "Sit the salmon on top, skin down; season, remaining oil over the fish.",
+      "Roast 12 to 14 minutes until the salmon flakes.",
+      "Fold the spinach through the hot veg to wilt; squeeze lemon over everything."
+    ]
+  },
+  {
+    "title": "Greek yoghurt berry parfait",
+    "tags": ["Breakfast", "Snack"],
+    "kcal": 250,
+    "protein": 24,
+    "carbs": 28,
+    "fats": 5,
+    "rating": 4.7,
+    "serves": 1,
+    "ingredients": [
+      "200g low-fat Greek yoghurt",
+      "100g mixed berries",
+      "20g granola",
+      "1 tsp honey"
+    ],
+    "method": [
+      "Layer half the yoghurt, then half the berries and granola; repeat.",
+      "Drizzle honey over the top.",
+      "Assemble no more than a few hours ahead so the granola keeps its crunch."
+    ]
+  },
+  {
+    "title": "Peanut-butter protein shake",
+    "tags": ["Snack", "High-protein"],
+    "kcal": 380,
+    "protein": 35,
+    "carbs": 22,
+    "fats": 16,
+    "rating": 4.5,
+    "serves": 1,
+    "ingredients": [
+      "1.5 scoops (45g) whey protein, chocolate or vanilla",
+      "1 tbsp natural peanut butter",
+      "1 small frozen banana",
+      "250ml milk of choice",
+      "Ice, pinch of salt"
+    ],
+    "method": [
+      "Blend everything on high for 45 seconds until completely smooth.",
+      "Thin with water or milk to preference. Great post-session or as a meal bridge."
+    ]
+  },
+  {
+    "title": "Beef & veg stir fry",
+    "tags": ["Dinner", "High-protein"],
+    "kcal": 580,
+    "protein": 44,
+    "carbs": 35,
+    "fats": 26,
+    "rating": 4.7,
+    "serves": 2,
+    "ingredients": [
+      "400g lean beef strips",
+      "1 red capsicum, sliced",
+      "1 head broccoli, small florets",
+      "1 zucchini, half-moons",
+      "2 tbsp oyster sauce, 1 tbsp soy",
+      "1 tbsp peanut oil, garlic and ginger",
+      "150g cooked rice or noodles to serve"
+    ],
+    "method": [
+      "Get the wok smoking hot; sear the beef in batches, remove.",
+      "Stir-fry garlic, ginger and the veg 3 to 4 minutes, keeping bite.",
+      "Beef back in with the sauces; toss 1 minute until glossy.",
+      "Serve over rice or noodles."
+    ]
+  },
+  {
+    "title": "Tuna & white bean salad",
+    "tags": ["Lunch", "Low-carb"],
+    "kcal": 430,
+    "protein": 36,
+    "carbs": 38,
+    "fats": 12,
+    "rating": 4.4,
+    "serves": 1,
+    "ingredients": [
+      "185g tin tuna in springwater, drained",
+      "200g tinned cannellini beans, rinsed",
+      "1 cup cherry tomatoes, halved",
+      "1/2 red onion, finely sliced",
+      "2 cups rocket or mixed leaves",
+      "2 tsp olive oil, red wine vinegar, salt and pepper"
+    ],
+    "method": [
+      "Toss the beans, tomatoes, onion and leaves with oil and vinegar.",
+      "Flake the tuna through; season well.",
+      "Eat immediately, or pack the dressing separately for meal prep."
+    ]
+  },
+  {
+    "title": "Egg white veggie scramble",
+    "tags": ["Breakfast", "Low-carb"],
+    "kcal": 280,
+    "protein": 28,
+    "carbs": 14,
+    "fats": 10,
+    "rating": 4.3,
+    "serves": 1,
+    "ingredients": [
+      "250ml egg whites (about 8 whites) plus 1 whole egg",
+      "1 cup baby spinach",
+      "1/2 capsicum, diced",
+      "4 mushrooms, sliced",
+      "1 tsp olive oil",
+      "1 slice wholegrain toast (optional, counted)"
+    ],
+    "method": [
+      "Soften the capsicum and mushrooms in the oil, 3 minutes.",
+      "Add spinach until wilted, then the egg whites and whole egg.",
+      "Scramble on low, pulling from the edges, until just set.",
+      "Season and serve on or beside the toast."
+    ]
+  },
+  {
+    "title": "Slow-cooker chilli con carne",
+    "tags": ["Dinner", "Meal prep"],
+    "kcal": 560,
+    "protein": 42,
+    "carbs": 45,
+    "fats": 22,
+    "rating": 4.8,
+    "serves": 6,
+    "ingredients": [
+      "1kg lean beef mince, browned",
+      "2 tins crushed tomatoes",
+      "1 tin kidney beans, 1 tin black beans, rinsed",
+      "1 onion, 2 capsicums, diced",
+      "2 tbsp chilli powder mix (cumin, paprika, oregano)",
+      "1 cup beef stock",
+      "400g cooked rice across servings"
+    ],
+    "method": [
+      "Brown the mince hard in a pan first for flavour.",
+      "Everything except the beans into the slow cooker; low for 6 hours.",
+      "Beans in for the last 30 minutes.",
+      "Portion with rice into 6 containers; freezes well for a month."
+    ]
+  },
+  {
+    "title": "Sheet-pan chicken fajitas",
+    "tags": ["Dinner", "Meal prep"],
+    "kcal": 490,
+    "protein": 41,
+    "carbs": 35,
+    "fats": 18,
+    "rating": 4.9,
+    "serves": 4,
+    "ingredients": [
+      "700g chicken breast, sliced",
+      "3 capsicums (mixed colours), sliced",
+      "2 red onions, wedged",
+      "2 tbsp olive oil, 2 tbsp fajita seasoning",
+      "8 small tortillas",
+      "Lime, coriander, light sour cream to serve"
+    ],
+    "method": [
+      "Oven to 220C. Toss chicken, capsicum and onion with oil and seasoning on one big tray.",
+      "Roast 18 to 20 minutes, tossing once, until charred at the edges.",
+      "Warm the tortillas; serve with lime and a spoon of light sour cream.",
+      "For prep, box the filling and tortillas separately."
+    ]
+  },
+  {
+    "title": "Banana & whey protein pancakes",
+    "tags": ["Breakfast", "High-protein"],
+    "kcal": 410,
+    "protein": 32,
+    "carbs": 50,
+    "fats": 8,
+    "rating": 4.7,
+    "serves": 1,
+    "ingredients": [
+      "1 ripe banana, mashed",
+      "1 scoop (30g) whey protein",
+      "40g rolled oats, blitzed to flour",
+      "1 whole egg, splash of milk",
+      "1/2 tsp baking powder",
+      "Cooking spray, berries and maple to finish (counted)"
+    ],
+    "method": [
+      "Whisk everything into a thick, pourable batter; rest 5 minutes.",
+      "Cook 3 pancakes in a sprayed non-stick pan, medium-low, 2 minutes a side.",
+      "Flip when bubbles hold their shape at the edges.",
+      "Stack with berries and a teaspoon of maple."
+    ]
+  },
+  {
+    "title": "Prawn & rice noodle bowl",
+    "tags": ["Lunch"],
+    "kcal": 460,
+    "protein": 34,
+    "carbs": 60,
+    "fats": 10,
+    "rating": 4.5,
+    "serves": 1,
+    "ingredients": [
+      "150g raw prawns, peeled",
+      "70g rice noodles (dry weight)",
+      "1 cup shredded cabbage and carrot",
+      "1/2 cucumber, ribboned",
+      "1 tbsp fish sauce, 1 tbsp lime juice, 1 tsp sugar, chilli",
+      "1 tsp sesame oil, mint and coriander"
+    ],
+    "method": [
+      "Soak the noodles per packet; refresh under cold water.",
+      "Sear the prawns in sesame oil 2 minutes until just pink.",
+      "Whisk fish sauce, lime, sugar and chilli into a dressing.",
+      "Toss noodles, veg and prawns with the dressing; herbs over the top."
+    ]
+  }
+]

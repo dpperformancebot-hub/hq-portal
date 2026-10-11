@@ -1,0 +1,136 @@
+==================================================================
+  DP PERFORMANCE — GoHighLevel sub-account READ-ONLY inventory
+==================================================================
+Location ID : R99JktDA6ajZeTWo4YPu
+API base    : https://services.leadconnectorhq.com  (Version 2021-07-28)
+Token       : pit-42… (redacted)
+Generated   : 2026-06-24T02:22:04.938Z
+Note: contact PII (names, emails, phones) is intentionally omitted.
+
+------------------------------------------------------------------
+1. PIPELINES + STAGES (in order)
+------------------------------------------------------------------
+Total pipelines: 2
+
+  ▸ Client Acquisition   [id 7LVtRv3IxCW79lV5XCBx]
+      1.  New Inquiry   [id 165cce67-56c3-4a58-9f8d-9d7fe0b891a8]
+      2.  In Conversation   [id 1cd623d4-c14a-46ef-960d-43904875b06a]
+      3.  Call Booked   [id f226fd1f-f5d5-47f5-818b-f41e78956346]
+      4.  Call Taken   [id 30eac9c5-1ff4-4859-9d5e-0d59f0af59fa]
+      5.  No Show   [id 21dbd54a-2609-4f2c-9984-e328eebf64a9]
+      6.  Follow Up   [id 0b2e4f4a-655b-45a3-a1bd-a4e545950dd7]
+      7.  Won / New Client   [id 2faa5e7f-624a-40fd-a6b8-c093b884223c]
+      8.  Lost   [id ca0aa879-d2ea-437c-8211-c7e48d379e40]
+
+  ▸ Marketing Pipeline   [id rTLBgAHwSVw2SGEURebK]
+      1.  New Lead   [id 57fa238c-ef32-43d1-b11a-91192c3c09a4]
+      2.  Hot Lead   [id ab57024b-56d3-4174-9cc3-b531abb61f66]
+      3.  New Booking   [id db040b82-7698-4864-9edc-ed79f899c2f0]
+      4.  Visit Attended   [id 8ebaaf36-ab6f-4b0b-9685-ccb8b6ccef6b]
+      5.  Sale   [id 9674d8b7-7b09-46de-89e4-66aae246c504]
+      6.  Left a Review   [id 4ebe9a3a-2cb2-4a00-9779-be0dde2b2afa]
+
+------------------------------------------------------------------
+2. CALENDARS + CALENDAR GROUPS
+------------------------------------------------------------------
+Calendars: 1
+  • Schedule an Appointment                  active     type=event  [id hlENil7TryqbHqCM16XA]
+
+Calendar groups: 1
+  • Business Coaching                        active  [id v0byJ9e3saHsXYC4UXq3]
+
+------------------------------------------------------------------
+3. CUSTOM FIELDS (name + type) and CUSTOM VALUES
+------------------------------------------------------------------
+Custom fields: 17
+  • Lead Source                              SINGLE_OPTIONS model=contact
+  • Billing Frequency                        SINGLE_OPTIONS model=contact
+  • Term End Date                            DATE           model=contact
+  • Status                                   SINGLE_OPTIONS model=contact
+  • Weekly Rate                              NUMERICAL      model=contact
+  • Transformation                           SINGLE_OPTIONS model=contact
+  • How often do you normally workout?       RADIO          model=contact
+  • Onboarding Fee                           SINGLE_OPTIONS model=contact
+  • Term Length                              SINGLE_OPTIONS model=contact
+  • Posted                                   SINGLE_OPTIONS model=contact
+  • Converted to App                         CHECKBOX       model=contact
+  • Permission to Post                       SINGLE_OPTIONS model=contact
+  • Assigned Coach                           SINGLE_OPTIONS model=contact
+  • Check in frequency                       SINGLE_OPTIONS model=contact
+  • Content Uploaded                         CHECKBOX       model=contact
+  • Start Date                               DATE           model=contact
+  • Handover                                 SINGLE_OPTIONS model=contact
+
+Custom values: 4
+(API returns the merge-field definition + key, not the stored value.)
+  • Promotion Name                             {{ custom_values.promotion_name }}
+  • Hours of Operation                         {{ custom_values.hours_of_operation }}
+  • Marketing - New Booking Thank You Page URL {{ custom_values.new_booking_ty_url }}
+  • Marketing - Website Booking Page URL       {{ custom_values.marketing__website_booking_page_url }}
+
+------------------------------------------------------------------
+4. TAGS
+------------------------------------------------------------------
+Tags: 6
+  • ambassador
+  • follow-up
+  • high priority
+  • instagram
+  • tiktok
+  • warm lead
+
+------------------------------------------------------------------
+5. USERS / STAFF (name + role)
+------------------------------------------------------------------
+Users: 0
+  none
+
+------------------------------------------------------------------
+6. WORKFLOWS (name + status)
+------------------------------------------------------------------
+Workflows: 13
+  • 1. New Lead Nurture (Fast 5) - Claim Offer         draft
+  • 2. Appointment Confirmation + Reminders            draft
+  • 3. Appt No Show                                    draft
+  • 4. New Sale - Send Review Request                  draft
+  • 5. Long-Term Nurture                               draft
+  • 6. Stale Leads                                     draft
+  • Follow-Up Cadence                                  draft
+  • Lost Lead Nurture (building)                       draft
+  • New Client Onboarding                              draft
+  • New Client Onboarding                              draft
+  • No Show Follow Up                                  draft
+  • Sales Pipeline                                     draft
+  • Tag lost reason + add to nurture                   draft
+
+------------------------------------------------------------------
+7. FORMS / SURVEYS
+------------------------------------------------------------------
+Forms: 1
+  • Marketing Form - Claim Offer  [id 4JTzxApdzk5PTt1rXhxB]
+
+Surveys: 0
+  (none)
+
+------------------------------------------------------------------
+8. COUNTS
+------------------------------------------------------------------
+Total contacts: 781
+
+Opportunities per pipeline (meta.total from /opportunities/search):
+  • Client Acquisition                  0
+  • Marketing Pipeline                  0
+  TOTAL (all pipelines)                 0
+
+------------------------------------------------------------------
+9. CONNECTED CHANNELS / CONVERSATION PROVIDERS
+------------------------------------------------------------------
+Conversation providers: NOT AVAILABLE (HTTP 400): Conversation with id providers not found
+Location social block present: ["facebookUrl","googlePlus","linkedIn","foursquare","twitter","yelp","instagram","youtube","pinterest","blogRss","googlePlacesId"]
+Location settings keys: ["allowDuplicateContact","allowDuplicateOpportunity","allowFacebookNameMerge","disableContactTimezone","contactUniqueIdentifiers","crmSettings","saasSettings"]
+(GHL API v2 does not expose a definitive 'which channels are connected'
+ read for IG/WhatsApp/Email/SMS at the location level; see notes above.)
+
+==================================================================
+  END OF INVENTORY — read-only, no writes performed.
+==================================================================

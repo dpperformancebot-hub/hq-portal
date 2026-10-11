@@ -1,0 +1,780 @@
+[
+ {
+  "id": "comm",
+  "title": "Communication & Coaching Fundamentals",
+  "description": "Covers tone, response timing, message templates, and when to escalate inside a coach-client conversation.",
+  "expect": [
+   "18 multiple-choice questions",
+   "Mix of tone and judgement scenarios",
+   "Pass mark: 100%"
+  ],
+  "questions": [
+   {
+    "q": "When a client misses two check-ins in a row, you should:",
+    "options": [
+     "Wait silently for the third",
+     "Send a soft, low-pressure check-in",
+     "Pause them automatically",
+     "Cancel their plan"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client sends a frustrated late-night message. Best first move?",
+    "options": [
+     "Reply immediately to defuse",
+     "Wait, draft, return to it before sending",
+     "Send a Loom apologising",
+     "Forward straight to Daniel"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The first sentence of a weekly reply should:",
+    "options": [
+     "Restate their goal",
+     "Reference one specific detail from their check-in",
+     "Open with a quote",
+     "Confirm next week's targets"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Default reply target window for a non-urgent client message:",
+    "options": [
+     "Within 1 hour",
+     "Within 4 hours",
+     "Within 24 hours",
+     "Within 48 hours"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Which of these belongs in the onboarding call, NOT the first weekly reply?",
+    "options": [
+     "Tone calibration",
+     "Setting check-in expectations and channel",
+     "Adjusting macros",
+     "A win callout"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client says \"I think this isn't working.\" You should:",
+    "options": [
+     "Defend the program",
+     "Ask one clarifying question, validate, escalate to Daniel",
+     "Offer a refund",
+     "Pause them"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Best length for a standard weekly reply:",
+    "options": [
+     "Under 80 words",
+     "Around 180 words",
+     "400+ words",
+     "As long as it needs to be"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The \"ghosted\" sequence runs at:",
+    "options": [
+     "24h, 3d, 7d",
+     "48h, 7d, 14d",
+     "1d, 7d, 30d",
+     "7d, 14d, 28d"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Loom is the right channel when:",
+    "options": [
+     "The reply is short",
+     "The client asked a yes/no question",
+     "You need to show body comp interpretation or program changes",
+     "It's faster than typing"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "A client mentions a death in the family. The right opening is:",
+    "options": [
+     "\"Let's adjust your macros\"",
+     "Acknowledge, offer space, no programming agenda this reply",
+     "Pause them without asking",
+     "Schedule a call"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "You disagree with Daniel's plan for a client. You should:",
+    "options": [
+     "Quietly do it your way",
+     "Raise it directly with Daniel before changing anything",
+     "Tell the client your view",
+     "Wait for the client to complain"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client repeatedly messages outside hours. You:",
+    "options": [
+     "Reply each time",
+     "Restate the support channel and hours, kindly, in writing",
+     "Ignore them",
+     "Pause them"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client is excited about a 0.3kg drop. You:",
+    "options": [
+     "Warn them not to celebrate",
+     "Match the energy and ground it in their effort",
+     "Tell them it's noise",
+     "Send a Loom"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "When a client jokes about disordered eating patterns, the right response is to:",
+    "options": [
+     "Joke back",
+     "Acknowledge gently and look for a referral if a pattern emerges",
+     "Cancel the program",
+     "Ignore"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client complains the program is too easy. First step:",
+    "options": [
+     "Add 30% volume",
+     "Ask about RPE and recent session quality",
+     "Defend the program",
+     "Switch them to another coach"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Best practice for celebrating a milestone:",
+    "options": [
+     "Mass message",
+     "Specific, named, tied to their effort",
+     "Generic emoji reply",
+     "Ignore — they'll know"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "When in doubt about scope, default behaviour is:",
+    "options": [
+     "Decide alone",
+     "Escalate to Daniel with a 3–5 line summary",
+     "Tell the client to handle it",
+     "Pause the client"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Tone of a re-engagement message at day 7 should be:",
+    "options": [
+     "Stern",
+     "Warm and non-judgemental",
+     "Apologetic",
+     "Formal"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "id": "system",
+  "title": "Running the System",
+  "description": "How the portal, check-in pipeline, payroll, and admin tooling fit together.",
+  "expect": [
+   "28 multiple-choice questions",
+   "Operational workflows and tooling",
+   "Pass mark: 100%"
+  ],
+  "questions": [
+   {
+    "q": "Where do new client onboarding bonuses post to?",
+    "options": [
+     "My Pay → bonuses",
+     "Audits",
+     "Resources",
+     "Settings"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "A client's status changes from Sent to Submitted when:",
+    "options": [
+     "You message them",
+     "They submit their check-in form",
+     "Their plan renews",
+     "You record a Loom"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The Check-In Log is the source of truth for:",
+    "options": [
+     "Macros",
+     "Weekly status across the team",
+     "Recipes",
+     "Payroll"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "To pause a client temporarily:",
+    "options": [
+     "Cancel and re-invite later",
+     "Use Pause status with end date",
+     "Mute their messages",
+     "Unassign them"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "How often should client photos be reviewed?",
+    "options": [
+     "Weekly",
+     "Every check-in submission",
+     "Monthly",
+     "Quarterly"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Where do you find the swap library?",
+    "options": [
+     "Recipes",
+     "Resources / SOPs",
+     "Audits",
+     "Settings"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client's Day field on the Check-In Log indicates:",
+    "options": [
+     "Day they signed up",
+     "Their scheduled check-in day",
+     "Today's date",
+     "Their birthday"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Plan = \"F\" means:",
+    "options": [
+     "Fortnightly check-ins",
+     "Free trial",
+     "Final week",
+     "Foundation plan"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Status \"SendMessage\" means:",
+    "options": [
+     "Client sent a message",
+     "You owe them outreach",
+     "Auto-message scheduled",
+     "Mass message queued"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Audits are reviewed:",
+    "options": [
+     "By the client",
+     "By the head coach periodically",
+     "By payroll",
+     "Never"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The transformation pipeline tag triggers:",
+    "options": [
+     "A discount",
+     "Inclusion in marketing review",
+     "A bonus",
+     "Auto-pause"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Default density for the My Clients table is:",
+    "options": [
+     "Compact",
+     "Regular",
+     "Comfy",
+     "Auto"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The \"Show cancelled\" toggle defaults to:",
+    "options": [
+     "On",
+     "Off",
+     "Per-coach preference",
+     "Auto"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client's plan and day cannot be changed by:",
+    "options": [
+     "Head coach",
+     "Assistant coach",
+     "Client themselves",
+     "Admin"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "Loom recordings should be uploaded to:",
+    "options": [
+     "The client's record",
+     "Your personal cloud",
+     "Group chat",
+     "Email"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Monthly retention reporting is owned by:",
+    "options": [
+     "Each coach individually",
+     "Daniel / Operations",
+     "Clients",
+     "Marketing"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "When the portal shows \"Check-in Rate —\" it means:",
+    "options": [
+     "100%",
+     "0%",
+     "Insufficient data",
+     "Cancelled"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "A coach's pay screen shows pay for:",
+    "options": [
+     "All coaches",
+     "Their own clients only",
+     "Selected clients",
+     "Cancelled clients"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The Tweaks panel is for:",
+    "options": [
+     "Live demo controls",
+     "Client preferences",
+     "Payroll",
+     "Onboarding"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Theme preference persists via:",
+    "options": [
+     "URL",
+     "localStorage",
+     "Server",
+     "Nowhere — resets each load"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A check-in marked Missed turns to Ghosted after:",
+    "options": [
+     "7 days no reply",
+     "14 days no reply",
+     "30 days no reply",
+     "Never"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Refund requests must be:",
+    "options": [
+     "Processed by the assigned coach",
+     "Escalated to Daniel within 24 hours",
+     "Refused",
+     "Auto-approved"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Recipes added by coaches are visible to:",
+    "options": [
+     "Their clients only",
+     "The whole team",
+     "Public",
+     "Daniel only"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Best place to log a long client note:",
+    "options": [
+     "Group chat",
+     "The client's record / Notes",
+     "Email",
+     "SMS"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A weekly coach review covers:",
+    "options": [
+     "Macros only",
+     "Top wins, blockers, escalations",
+     "Marketing",
+     "Payroll"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "When a client is reassigned to another coach:",
+    "options": [
+     "Old coach keeps writing them",
+     "Hand-off note + intro message",
+     "Cancel and re-onboard",
+     "Nothing changes"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Two coaches disagree on a client decision. Tiebreaker is:",
+    "options": [
+     "Whoever messaged last",
+     "Daniel",
+     "Client preference",
+     "Coin flip"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "The portal's search bar is intended to find:",
+    "options": [
+     "Clients, check-ins, resources",
+     "Recipes only",
+     "Settings only",
+     "Payroll only"
+    ],
+    "correct": 0
+   }
+  ]
+ },
+ {
+  "id": "decisions",
+  "title": "Decision Making & Check-in Mastery",
+  "description": "Judgement calls inside check-ins — when to act, when to wait, when to refer out.",
+  "expect": [
+   "15 multiple-choice questions",
+   "Scenario-based judgement",
+   "Pass mark: 100%"
+  ],
+  "questions": [
+   {
+    "q": "Weight stalls for 14 days at high adherence. First action:",
+    "options": [
+     "Add cardio",
+     "Drop calories 5–10%, mostly carbs",
+     "Add a refeed",
+     "Switch macros entirely"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client reports 5 hours sleep, 4 nights running. Priority:",
+    "options": [
+     "Adjust nutrition",
+     "Address sleep before nutrition or training",
+     "Add caffeine",
+     "Add training volume"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Diet break trigger:",
+    "options": [
+     "Any plateau",
+     "8+ weeks deficit + plateau or rising hunger",
+     "Client asks",
+     "Every 4 weeks"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client mentions persistent knee pain for 3 weeks. You:",
+    "options": [
+     "Push through",
+     "Sub the lift, refer to physio",
+     "Cancel programming",
+     "Add volume"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Pause vs cancel: a 6-week travel block?",
+    "options": [
+     "Cancel",
+     "Pause with documented end date",
+     "Keep active",
+     "Auto-renew"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Two consecutive weeks of declining session quality:",
+    "options": [
+     "Add volume",
+     "Investigate sleep, stress, food, then deload if needed",
+     "Switch program",
+     "Ignore"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client is excited about a 0.4kg drop after a stressful week. You:",
+    "options": [
+     "Drop calories further",
+     "Acknowledge but flag the noise — don't over-adjust",
+     "Add cardio",
+     "Refeed"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Comparing photos: which pair is most useful?",
+    "options": [
+     "Day 1 vs today",
+     "Last week vs this week",
+     "Same lighting / time of day, ~2 and ~6 weeks apart",
+     "Random"
+    ],
+    "correct": 2
+   },
+   {
+    "q": "A client mentions skipping meals to \"save calories.\" You:",
+    "options": [
+     "Approve",
+     "Address the pattern, look for disordered eating signals, refer if needed",
+     "Ignore",
+     "Cut calories more"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Adjustments during a confounded week (illness/travel/menstrual):",
+    "options": [
+     "Adjust as normal",
+     "Hold adjustments, document, revisit next week",
+     "Pause",
+     "Cancel"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client wants to add a 5th training day. They're currently on 3.",
+    "options": [
+     "Approve",
+     "Discuss recovery + sleep + adherence first; if green, increase by 1",
+     "Refuse outright",
+     "Switch to 6"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client's resting HR has trended up 8 bpm over 3 weeks. Likely:",
+    "options": [
+     "Random",
+     "Possible overreach — investigate",
+     "Equipment error",
+     "Hydration only"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Refeed length default:",
+    "options": [
+     "1 day",
+     "7–14 days at maintenance",
+     "30 days",
+     "Permanent"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A client requests a refund mid-block. Within the same exchange you:",
+    "options": [
+     "Refund",
+     "Acknowledge, ask one clarifying question, escalate within 24h",
+     "Refuse",
+     "Pause"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Coach autonomy ends at:",
+    "options": [
+     "Macro tweaks under 15%",
+     "Issuing refunds, pricing changes, transfers",
+     "Training splits",
+     "Check-in cadence"
+    ],
+    "correct": 1
+   }
+  ]
+ },
+ {
+  "id": "programming",
+  "title": "Programming & Systems",
+  "description": "Block design, progression, deloads, substitutions.",
+  "expect": [
+   "12 multiple-choice questions",
+   "Programming defaults and reasoning",
+   "Pass mark: 100%"
+  ],
+  "questions": [
+   {
+    "q": "Default sessions per week for a new general-pop client:",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Maximum working sets per muscle group in week 1:",
+    "options": [
+     "3",
+     "6",
+     "10",
+     "15"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Default progression rule:",
+    "options": [
+     "Same weight + 1 rep, or +2.5kg same reps",
+     "+5% per week",
+     "Random",
+     "RPE 10 every set"
+    ],
+    "correct": 0
+   },
+   {
+    "q": "Default deload cadence:",
+    "options": [
+     "Every 3 weeks",
+     "Every 6–8 weeks",
+     "Every 12 weeks",
+     "Never"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "During a deload, volume drops by:",
+    "options": [
+     "10%",
+     "40–50%",
+     "75%",
+     "100%"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Tier-1 swap:",
+    "options": [
+     "Different muscle",
+     "Same pattern + load",
+     "Different equipment, similar stimulus",
+     "Random"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Tier-2 swap:",
+    "options": [
+     "Same pattern + load",
+     "Different equipment, similar stimulus",
+     "Different muscle",
+     "Removed entirely"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "A 30-minute session should:",
+    "options": [
+     "Skip the program",
+     "Be effective — strip warmups, condense supersets, drop accessories",
+     "Skip lifts",
+     "Cardio only"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "When deloading, do you change nutrition the same week?",
+    "options": [
+     "Always",
+     "Rarely — pick the lever that needs it most",
+     "Never",
+     "Always cut calories"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Reassessment touchpoint inside a deload week:",
+    "options": [
+     "None",
+     "Measurements, photos, lift logs",
+     "Just weight",
+     "Just photos"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Acute injury (under 7 days) approach:",
+    "options": [
+     "Train through",
+     "Substitute within the same movement pattern",
+     "Cancel session",
+     "Skip a week"
+    ],
+    "correct": 1
+   },
+   {
+    "q": "Default session length:",
+    "options": [
+     "20–30 min",
+     "50–60 min",
+     "75–90 min",
+     "120 min"
+    ],
+    "correct": 1
+   }
+  ]
+ }
+]
